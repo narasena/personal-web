@@ -22,6 +22,12 @@ const projects = [
     imagepath: "/portfolios_screenshots/todo.png",
     webUrl: "https://todo-list-ashy-seven.vercel.app/",
   },
+  {
+    title: "IGN Home&DetailsPage",
+    description: "Replicate the Homepage of IGN and the article detail page",
+    imagepath: "/portfolios_screenshots/ign.png",
+    webUrl: "https://ign-dot-com.vercel.app/",
+  },
 ];
 
 const Portfolio = () => {
