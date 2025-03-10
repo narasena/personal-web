@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { IoLogoJavascript } from "react-icons/io";
 import { SiBackendless, SiCss3, SiHtml5, SiJavascript, SiNextdotjs, SiTailwindcss, SiTypescript } from "react-icons/si";
 import { FaCode } from "react-icons/fa";
 import { HiMiniDevicePhoneMobile } from "react-icons/hi2";

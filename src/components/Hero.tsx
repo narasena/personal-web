@@ -19,7 +19,7 @@ const Hero = () => {
             Narasena
           </h5>
           <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            I'm a Fullstack Developer with a passion for creating innovative solutions. I picked an interest in automation workflow.
+            I am a Fullstack Developer with a passion for creating innovative solutions. I picked an interest in automation workflow.
           </p>
         </div>
       </div>

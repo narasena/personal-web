@@ -1,8 +1,7 @@
 "use client";
 import React from "react";
-import { useEffect, useRef } from "react";
-import html2canvas from "html2canvas";
 import Link from "next/link";
+import Image from "next/image";
 
 const projects = [
   {
@@ -44,9 +43,13 @@ const Portfolio = () => {
               <div key={index} className="flex justify-center">
                 <div className="block max-w-[18rem] rounded-lg overflow-hidden bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-black">
                   <div className="relative aspect-video overflow-hidden bg-cover bg-no-repeat">
-                    <img
+                    <Image
                       src={project.imagepath}
                       alt={project.title}
+                      width={288}
+                      height={162}
+                      layout="responsive"
+                      objectFit="cover"
                       className="w-full h-full object-cover"
                     />
                   </div>

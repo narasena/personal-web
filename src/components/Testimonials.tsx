@@ -28,7 +28,11 @@ const Testimonials = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: index * 0.2 }}
             className="bg-gray-800 p-4 rounded-lg shadow-lg hover:shadow-2xl transition-shadow">
-            <p className="text-gray-300 italic mb-3 text-xs sm:text-sm">"{testimonial.feedback}"</p>
+            <p className="text-gray-300 italic mb-3 text-xs sm:text-sm">
+              {`&quot`}
+              {testimonial.feedback}
+              {`&quot`}
+            </p>
             <h4 className="text-white font-bold text-sm sm:text-base">{testimonial.name}</h4>
           </motion.div>
         ))}
