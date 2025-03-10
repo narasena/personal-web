@@ -12,13 +12,13 @@ const projects = [
   },
   {
     title: "Instagram Feed",
-    description: "A mobile-responsive design with Next.js.",
+    description: "A replica of the instagram feed view",
     imagepath: "/portfolios_screenshots/instagramfake.png",
     webUrl: "https://instagram-fake-plum.vercel.app/",
   },
   {
     title: "Todo Lists",
-    description: "A dynamic e-commerce platform.",
+    description: "A dynamic todo list",
     imagepath: "/portfolios_screenshots/todo.png",
     webUrl: "https://todo-list-ashy-seven.vercel.app/",
   },
@@ -28,14 +28,19 @@ const Portfolio = () => {
   
 
   return (
-    <section id="portfolios" className="py-12 px-4">
+    <section id="portfolios" className="py-12 px-4 scroll-mt-20">
       <section className="bg-white dark:bg-gray-900 rounded-2xl">
         <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-          <div className="max-w-screen-md mb-8 lg:mb-16">
-            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">My Skills</h2>
+          <div className="max-w-screen-md mb-8 lg:mb-16 min-w-full px-8">
+            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">My Portfolios</h2>
             <p className="text-gray-500 sm:text-xl dark:text-gray-400">
-              As a fullstack developer, I blend creativity with technical expertise to build modern, responsive web
-              applications. Here’s a breakdown of the core skills I bring:
+              Welcome to my portfolio—a curated collection of projects where innovation meets technical excellence. Each
+              project showcased here is a testament to my expertise in fullstack development, blending creative design
+              with robust, high-performance solutions. From dynamic e-commerce platforms and interactive dashboards to
+              custom content management systems, every project highlights my commitment to user-centric design,
+              cutting-edge technologies (like JavaScript, TypeScript, React, Next.js, Node.js, and Tailwind CSS), and
+              continuous improvement. Explore these projects to see how I transform complex challenges into elegant,
+              efficient digital experiences.
             </p>
           </div>
           <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
@@ -65,7 +70,6 @@ const Portfolio = () => {
                         className="bg-blue-500 w-full text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">
                         Visit Site
                       </Link>
-                      
                     </div>
                   </div>
                 </div>

@@ -8,7 +8,7 @@ import { SlScreenDesktop, SlScreenTablet } from "react-icons/sl";
 import { TbApi } from "react-icons/tb";
 
 const skillsData = [
-  { name: "JavaScript&Typescript", level: 80 },
+  { name: "JavaScript & Typescript", level: 80 },
   { name: "Next.js", level: 85 },
   { name: "CSS / Tailwind", level: 70 },
   { name: "Responsive", level: 75 },
@@ -18,7 +18,7 @@ const skillsData = [
 
 const Skills = () => {
   return (
-    <section id="my_skills" className="py-12 bg-gray-800 px-4 rounded-2xl">
+    <section id="my_skills" className="py-12 bg-gray-800 px-4 rounded-2xl scroll-mt-20">
       <section className="bg-white dark:bg-gray-900 rounded-2xl">
         <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
           <div className="max-w-screen-md mb-8 lg:mb-16">
@@ -32,14 +32,14 @@ const Skills = () => {
             <div>
               <div className="flex justify-center items-center mb-4 w-max h-10 rounded-full bg-primary-100 lg:h-12 lg:w-max dark:bg-primary-900">
                 <svg
-                  className="w-8 h-8 text-primary-600 lg:w-12 lg:h-12 dark:text-primary-300"
+                  className="w-8 h-8 text-white lg:w-12 lg:h-12 dark:text-primary-300"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg">
                   <SiJavascript />
                 </svg>
                 <svg
-                  className="w-8 h-8 text-primary-600 lg:w-12 lg:h-12 dark:text-primary-300"
+                  className="w-8 h-8 text-white lg:w-12 lg:h-12 dark:text-primary-300"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg">
@@ -55,14 +55,14 @@ const Skills = () => {
             <div>
               <div className="flex justify-center items-center mb-4 w-max h-10 rounded-full bg-primary-100 lg:h-12 lg:w-max dark:bg-primary-900">
                 <svg
-                  className="w-8 h-8 text-primary-600 lg:w-12 lg:h-12 dark:text-primary-300"
+                  className="w-8 h-8 text-white lg:w-12 lg:h-12 dark:text-primary-300"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg">
                   <FaCode />
                 </svg>
                 <svg
-                  className="w-8 h-8 text-primary-600 lg:w-12 lg:h-12 dark:text-primary-300"
+                  className="w-8 h-8 text-white lg:w-12 lg:h-12 dark:text-primary-300"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg">
@@ -79,21 +79,21 @@ const Skills = () => {
             <div>
               <div className="flex justify-center items-center mb-4 w-max h-10 rounded-full bg-primary-100 lg:h-12 lg:w-max dark:bg-primary-900">
                 <svg
-                  className="w-8 h-8 text-primary-600 lg:w-12 lg:h-12 dark:text-primary-300"
+                  className="w-8 h-8 text-white lg:w-12 lg:h-12 dark:text-primary-300"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg">
                   <SiTailwindcss />
                 </svg>
                 <svg
-                  className="w-8 h-8 text-primary-600 lg:w-12 lg:h-12 dark:text-primary-300"
+                  className="w-8 h-8 text-white lg:w-12 lg:h-12 dark:text-primary-300"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg">
                   <SiHtml5 />
                 </svg>
                 <svg
-                  className="w-8 h-8 text-primary-600 lg:w-12 lg:h-12 dark:text-primary-300"
+                  className="w-8 h-8 text-white lg:w-12 lg:h-12 dark:text-primary-300"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg">
@@ -110,21 +110,21 @@ const Skills = () => {
             <div>
               <div className="flex justify-center items-center mb-4 w-max h-10 rounded-full bg-primary-100 lg:h-12 lg:w-max dark:bg-primary-900">
                 <svg
-                  className="w-8 h-8 text-primary-600 lg:w-12 lg:h-12 dark:text-primary-300"
+                  className="w-8 h-8 text-white lg:w-12 lg:h-12 dark:text-primary-300"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg">
                   <HiMiniDevicePhoneMobile />
                 </svg>
                 <svg
-                  className="w-8 h-8 text-primary-600 lg:w-12 lg:h-12 dark:text-primary-300"
+                  className="w-8 h-8 text-white lg:w-12 lg:h-12 dark:text-primary-300"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg">
                   <SlScreenTablet />
                 </svg>
                 <svg
-                  className="w-8 h-8 text-primary-600 lg:w-12 lg:h-12 dark:text-primary-300"
+                  className="w-8 h-8 text-white lg:w-12 lg:h-12 dark:text-primary-300"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg">
@@ -140,7 +140,7 @@ const Skills = () => {
             <div>
               <div className="flex justify-center items-center mb-4 w-max h-10 rounded-full bg-primary-100 lg:h-12 lg:w-max dark:bg-primary-900">
                 <svg
-                  className="w-8 h-8 text-primary-600 lg:w-12 lg:h-12 dark:text-primary-300"
+                  className="w-8 h-8 text-white lg:w-12 lg:h-12 dark:text-primary-300"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg">
@@ -157,7 +157,7 @@ const Skills = () => {
             <div>
               <div className="flex justify-center items-center mb-4 w-max h-10 rounded-full bg-primary-100 lg:h-12 lg:w-max dark:bg-primary-900">
                 <svg
-                  className="w-8 h-8 text-primary-600 lg:w-12 lg:h-12 dark:text-primary-300"
+                  className="w-8 h-8 text-white lg:w-12 lg:h-12 dark:text-primary-300"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg">
@@ -179,8 +179,7 @@ const Skills = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
-        transition={{ duration: 1 }}>
-      </motion.h2>
+        transition={{ duration: 1 }}></motion.h2>
       <div className="max-w-xl mx-auto space-y-4">
         {skillsData.map((skill, index) => (
           <div key={index}>

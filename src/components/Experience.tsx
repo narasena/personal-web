@@ -13,7 +13,7 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-12 bg-gray-800 px-4 rounded-2xl">
+    <section id="experience" className="py-12 bg-gray-800 px-4 rounded-2xl scroll-mt-20">
       <motion.h2
         className="text-2xl sm:text-3xl font-bold text-center mb-6 text-white"
         initial={{ opacity: 0 }}

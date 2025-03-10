@@ -10,9 +10,9 @@ const testimonialsData = [
 
 const Testimonials = () => {
   return (
-    <section id="testimonials" className="py-12 px-4">
+    <section id="testimonials" className="py-12 px-4 scroll-mt-20">
       <motion.h2
-        className="text-2xl sm:text-3xl font-bold text-center mb-6"
+        className="text-2xl sm:text-3xl font-bold text-white text-center mb-6"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
@@ -29,9 +29,9 @@ const Testimonials = () => {
             transition={{ duration: 0.5, delay: index * 0.2 }}
             className="bg-gray-800 p-4 rounded-lg shadow-lg hover:shadow-2xl transition-shadow">
             <p className="text-gray-300 italic mb-3 text-xs sm:text-sm">
-              {`&quot`}
+              {`"`}
               {testimonial.feedback}
-              {`&quot`}
+              {`"`}
             </p>
             <h4 className="text-white font-bold text-sm sm:text-base">{testimonial.name}</h4>
           </motion.div>
