@@ -45,7 +45,7 @@ const Portfolio = () => {
         <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
           <div className="max-w-screen-md mb-8 lg:mb-16 min-w-full px-2 sm:px-8">
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold  text-white">My Portfolios</h2>
-            <p className=" sm:text-xl text-gray-400">
+            <p className=" sm:text-xl text-gray-200">
               Welcome to my portfolio—a curated collection of projects where innovation meets technical excellence. Each
               project showcased here is a testament to my expertise in fullstack development, blending creative design
               with robust, high-performance solutions. From dynamic e-commerce platforms and interactive dashboards to
@@ -79,7 +79,7 @@ const Portfolio = () => {
                         href={project.webUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-blue-500 w-full text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">
+                        className="bg-blue-800 w-full text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">
                         Visit Site
                       </Link>
                     </div>
