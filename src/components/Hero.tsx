@@ -9,7 +9,7 @@ const Hero = () => {
       <div className='flex py-4 mb-7 flex-col text-slate-200 items-center border rounded-lg shadow-sm md:flex-row md:max-w-xl border-gray-700/60 bg-gray-800/60 hover:bg-gray-700/60'>
         <Image
           className='object-cover w-full rounded-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg sm:m-2'
-          src='https://static.wikia.nocookie.net/fortnite/images/f/f9/Geralt_of_Rivia_%28Viper_School%29_-_Outfit_-_Fortnite.png/revision/latest?cb=20230228142116'
+          src='https://static.wikia.nocookie.net/fortnite/images/f/f9/Geralt_of_Rivia_%28Viper_School%29_-_Outfit_-_Fortnite.png'
           width={100}
           height={200}
           alt=''
