@@ -3,11 +3,11 @@ import React from "react";
 
 const AboutMe = () => {
   return (
-    <section id="about_me" className="py-12 px-8 sm:px-6 scroll-mt-20">
-      <section className="bg-white dark:bg-gray-900 rounded-2xl ">
+    <section id="about_me" className="py-12 px-2 sm:px-6 scroll-mt-20">
+      <section className="bg-gray-900/80 rounded-2xl ">
         <div className="py-8 px-6 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-          <div className="max-w-screen-lg px-6 w-full text-gray-500 sm:text-lg dark:text-gray-400">
-            <h2 className="mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">
+          <div className="max-w-screen-lg px-2 w-full  sm:text-lg max-md:text-base text-gray-300">
+            <h2 className="mb-4 text-4xl tracking-tight font-bold text-white">
               <span className="font-extrabold">About Me</span>
             </h2>
             <p className="mb-4 font-light">

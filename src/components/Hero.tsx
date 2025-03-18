@@ -6,7 +6,7 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <section id="hero" className="flex flex-col items-center justify-center min-h-screen text-center px-4 scroll-mt-20">
-      <div className="flex py-4 mb-7 flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700/60 dark:bg-gray-800/60 dark:hover:bg-gray-700/60">
+      <div className="flex py-4 mb-7 flex-col text-slate-200 items-center border rounded-lg shadow-sm md:flex-row md:max-w-xl border-gray-700/60 bg-gray-800/60 hover:bg-gray-700/60">
         <Image
           className="object-cover w-full rounded-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg sm:m-2"
           src="/witcher.webp"
@@ -15,11 +15,11 @@ const Hero = () => {
           alt=""
         />
         <div className="flex flex-col justify-between p-4 leading-normal">
-          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Narasena</h5>
-          <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 text-left">
+          <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">Narasena</h5>
+          <p className="mb-3 font-normal text-gray-400 text-left">
             I am a Fullstack Developer with a passion for creating innovative solutions.
           </p>
-          <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 text-left">
+          <p className="mb-3 font-normal text-gray-400 text-left">
             have a keen interest in harnessing automation workflows to streamline processes and drive operational
             efficiency.
           </p>

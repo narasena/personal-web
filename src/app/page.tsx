@@ -1,5 +1,6 @@
 import AboutMe from "@/components/AboutMe";
 import Contact from "@/components/Contact";
+import ContactPage2 from "@/components/ContactV2";
 import Experience from "@/components/Experience";
 import Hero from "@/components/Hero";
 import NavBar from "@/components/NavBar";
