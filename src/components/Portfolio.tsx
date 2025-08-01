@@ -5,34 +5,24 @@ import Image from "next/image";
 
 const projects = [
   {
-    title: 'The Band',
-    description: 'A web app built with React and Node.js.',
-    imagepath: '/portfolios_screenshots/theband.png',
-    webUrl: 'https://the-band-sena-jcwd3203.vercel.app/',
-  },
-  {
-    title: 'Instagram Feed',
-    description: 'A replica of the instagram feed view',
-    imagepath: '/portfolios_screenshots/instagramfake.png',
-    webUrl: 'https://instagram-fake-plum.vercel.app/',
-  },
-  {
-    title: 'Todo Lists',
-    description: 'A dynamic todo list',
-    imagepath: '/portfolios_screenshots/todo.png',
-    webUrl: 'https://todo-list-ashy-seven.vercel.app/',
-  },
-  {
     title: 'IGN Home&DetailsPage',
     description: 'Replicate the Homepage of IGN and the article detail page',
-    imagepath: '/portfolios_screenshots/ign.png',
     webUrl: 'https://ign-dot-com.vercel.app/',
   },
   {
     title: 'Savory Spice Shop',
     description: 'Replicate some pages from an ecommerce spice shop',
-    imagepath: '/portfolios_screenshots/savoryspiceshop.png',
     webUrl: 'https://company-savoryspiceshop.vercel.app/',
+  },
+  {
+    title: 'Event Ticketing App',
+    description: 'Bootcamp Project for event ticketing app',
+    webUrl: 'https://mini-project-loket.vercel.app/',
+  },
+  {
+    title: 'Online Grocery App',
+    description: 'Bootcamp Project for e-grocery and managaement app',
+    webUrl: 'https://vercel.com/narasenas-projects/finpro-grocery-web-apps/',
   },
 ];
 
@@ -59,15 +49,13 @@ const Portfolio = () => {
             {projects.map((project, index) => (
               <div key={index} className="flex justify-center">
                 <div className="block max-w-[18rem] rounded-lg overflow-hidden bg-gray-900/60 text-surface shadow-secondary-1 bg-surface-dark text-white">
-                  <div className="relative aspect-video overflow-hidden bg-cover bg-no-repeat">
-                    <Image
-                      src={project.imagepath}
-                      alt={project.title}
-                      width={288}
-                      height={162}
-                      layout="responsive"
-                      objectFit="cover"
-                      className="w-full h-full object-cover"
+                  <div className="relative aspect-[16/10] overflow-hidden bg-cover bg-no-repeat cursor-pointer" onClick={() => window.open(project.webUrl, '_blank')}>
+                    <iframe
+                      src={project.webUrl}
+                      title={project.title}
+                      className="w-full h-full border-0 scale-[0.21] origin-top-left pointer-events-none"
+                      style={{ width: '1366px', height: '768px' }}
+                      loading="lazy"
                     />
                   </div>
                   <div className="p-6">
