@@ -22,7 +22,7 @@ const projects = [
   {
     title: 'Online Grocery App',
     description: 'Bootcamp Project for e-grocery and managaement app',
-    webUrl: 'https://vercel.com/narasenas-projects/finpro-grocery-web-apps/',
+    webUrl: 'https://finpro-grocery-web-apps.vercel.app/',
   },
 ];
 
