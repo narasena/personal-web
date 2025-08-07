@@ -1,42 +1,73 @@
 "use client";
 import React from "react";
-import { motion } from "framer-motion";
-import { SiBackendless, SiCss3, SiHtml5, SiJavascript, SiNextdotjs, SiTailwindcss, SiTypescript } from "react-icons/si";
-import { FaCode } from "react-icons/fa";
-import { HiMiniDevicePhoneMobile } from "react-icons/hi2";
-import { SlScreenDesktop, SlScreenTablet } from "react-icons/sl";
+import { SiBackendless, SiCss3, SiDocker, SiExpress, SiGit, SiGraphql, SiHtml5, SiJavascript, SiLinux, SiMysql, SiNestjs, SiNextdotjs, SiNodedotjs, SiPostgresql, SiReact, SiRedis, SiRobotframework, SiTailwindcss, SiTypescript } from "react-icons/si";
+import { FaAws, FaJava } from "react-icons/fa";
 import { TbApi } from "react-icons/tb";
+import { BiLogoSpringBoot } from "react-icons/bi";
+import { GrServerCluster } from "react-icons/gr";
+import { TiInfinity } from "react-icons/ti";
+import { FcWorkflow } from "react-icons/fc";
+import { CgWebsite } from "react-icons/cg";
+import { DiResponsive } from "react-icons/di";
+import { VscSymbolMethod } from "react-icons/vsc";
+import { IoIosCodeWorking } from "react-icons/io";
 
-const skillsData = [
+const mySkills = [
   {
-    name: 'JavaScript & Typescript',
-    level: 80,
-    color: 'bg-gradient-to-r from-yellow-400 to-blue-500', // gradient for JS/TS
+    name: 'Languages & Frameworks',
+    icon: <SiRobotframework />,
+    list: [
+      { name: 'JavaScript', icon: <SiJavascript /> },
+      { name: 'TypeScript', icon: <SiTypescript /> },
+      { name: 'React', icon: <SiReact /> },
+      { name: 'Next.js', icon: <SiNextdotjs /> },
+      { name: 'Node.js', icon: <SiNodedotjs /> },
+      { name: 'Express.js', icon: <SiExpress /> },
+      { name: 'Nest.js', icon: <SiNestjs /> },
+      { name: 'Java', icon: <FaJava /> },
+      { name: 'Java Spring Boot', icon: <BiLogoSpringBoot /> },
+    ],
   },
   {
-    name: 'Next.js',
-    level: 85,
-    color: 'bg-gray-900', // Next.js brand color
+    name: 'Database & Backend',
+    icon: <GrServerCluster />,
+    list: [
+      { name: 'MySQL', icon: <SiMysql /> },
+      { name: 'PostgreSQL', icon: <SiPostgresql /> },
+      { name: 'Backendless', icon: <SiBackendless /> },
+      { name: 'RESTful API', icon: <TbApi /> },
+      { name: 'GraphQL', icon: <SiGraphql /> },
+      { name: 'Redis', icon: <SiRedis /> },
+    ],
   },
   {
-    name: 'CSS / Tailwind',
-    level: 70,
-    color: 'bg-blue-500', // CSS blue
+    name: 'Tools & DevOps',
+    icon: <TiInfinity />,
+    list: [
+      { name: 'Git', icon: <SiGit /> },
+      { name: 'Docker', icon: <SiDocker /> },
+      { name: 'Linux', icon: <SiLinux /> },
+      { name: 'AWS', icon: <FaAws /> },
+      { name: 'CI/CD', icon: <FcWorkflow /> },
+    ],
   },
   {
-    name: 'Responsive',
-    level: 75,
-    color: 'bg-gradient-to-r from-purple-500 to-pink-500',
+    name: 'Web & UI',
+    icon: <CgWebsite />,
+    list: [
+      { name: 'HTML', icon: <SiHtml5 /> },
+      { name: 'CSS', icon: <SiCss3 /> },
+      { name: 'Tailwind', icon: <SiTailwindcss /> },
+      { name: 'Responsive', icon: <DiResponsive /> },
+    ],
   },
   {
-    name: 'Backendless',
-    level: 90,
-    color: 'bg-amber-700', // Brown for Backendless
-  },
-  {
-    name: 'API',
-    level: 90,
-    color: 'bg-green-500',
+    name: 'Methodology',
+    icon: <VscSymbolMethod />,
+    list: [
+      { name: 'Agile', icon: <IoIosCodeWorking /> },
+      { name: 'Scrum', icon: <IoIosCodeWorking /> },
+    ],
   },
 ];
 
@@ -52,176 +83,32 @@ const Skills = () => {
               applications. Here’s a breakdown of the core skills I bring:
             </p>
           </div>
-          <div className='space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0'>
-            <div>
-              <div className='flex justify-center items-center mb-4 w-max h-10 rounded-full bg-primary-100 lg:h-12 lg:w-max bg-primary-900'>
-                <svg
-                  className='w-8 h-8 text-white lg:w-12 lg:h-12 '
-                  fill='currentColor'
-                  viewBox='0 0 20 20'
-                  xmlns='http://www.w3.org/2000/svg'>
-                  <SiJavascript />
-                </svg>
-                <svg
-                  className='w-8 h-8 text-white lg:w-12 lg:h-12 '
-                  fill='currentColor'
-                  viewBox='0 0 20 20'
-                  xmlns='http://www.w3.org/2000/svg'>
-                  <SiTypescript />
-                </svg>
+          <div className='space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0 my-4'>
+            {mySkills.map((cat, index) => (
+              <div key={index}>
+                <div className='flex justify-center gap-1.5 items-start mb-4 w-max h-10 rounded-full bg-primary-100 lg:h-12 lg:w-max bg-primary-900'>
+                  {React.cloneElement(cat.icon, { 
+                        className: 'w-4 h-4 text-white lg:w-6 lg:h-6',
+                        size: 32 
+                      })}
+                <h3 className='mb-2 text-xl font-bold text-white'>{cat.name}</h3>
+                </div>
+                <div className='text-gray-600 flex flex-wrap gap-2'>
+                  {cat.list.map((item, index) => (
+                    <div key={index} className="flex gap-1 items-center rounded-md bg-white px-2">
+                      {React.cloneElement(item.icon, { 
+                        className: 'w-4 h-4 lg:w-5 lg:h-5',
+                        size: 32 
+                      })}
+                      <p>{item.name}</p>
+                    </div>
+                  ))}
+                </div>
               </div>
-              <h3 className='mb-2 text-xl font-bold text-white'>JavaScript & Typescript</h3>
-              <p className=' text-gray-400'>
-                I write robust and scalable code using both JavaScript and TypeScript. TypeScript{'’'}s static typing
-                helps catch errors early and makes large codebases more maintainable.
-              </p>
-            </div>
-            <div>
-              <div className='flex justify-center items-center mb-4 w-max h-10 rounded-full bg-primary-100 lg:h-12 lg:w-max bg-primary-900'>
-                <svg
-                  className='w-8 h-8 text-white lg:w-12 lg:h-12'
-                  fill='currentColor'
-                  viewBox='0 0 20 20'
-                  xmlns='http://www.w3.org/2000/svg'>
-                  <FaCode />
-                </svg>
-                <svg
-                  className='w-8 h-8 text-white lg:w-12 lg:h-12 '
-                  fill='currentColor'
-                  viewBox='0 0 20 20'
-                  xmlns='http://www.w3.org/2000/svg'>
-                  <SiNextdotjs />
-                </svg>
-              </div>
-              <h3 className='mb-2 text-xl font-bold text-white'>Frontend Dev.</h3>
-              <p className='text-gray-400'>
-                Leveraging libraries like React and frameworks such as Next.js, I create dynamic, interactive, and
-                server-rendered applications that deliver seamless user experiences. I{'’'}m passionate about building
-                interfaces that are not only visually appealing but also highly performant.
-              </p>
-            </div>
-            <div>
-              <div className='flex justify-center items-center mb-4 w-max h-10 rounded-full bg-primary-100 lg:h-12 lg:w-max bg-primary-900'>
-                <svg
-                  className='w-8 h-8 text-white lg:w-12 lg:h-12'
-                  fill='currentColor'
-                  viewBox='0 0 20 20'
-                  xmlns='http://www.w3.org/2000/svg'>
-                  <SiTailwindcss />
-                </svg>
-                <svg
-                  className='w-8 h-8 text-white lg:w-12 lg:h-12'
-                  fill='currentColor'
-                  viewBox='0 0 20 20'
-                  xmlns='http://www.w3.org/2000/svg'>
-                  <SiHtml5 />
-                </svg>
-                <svg
-                  className='w-8 h-8 text-white lg:w-12 lg:h-12'
-                  fill='currentColor'
-                  viewBox='0 0 20 20'
-                  xmlns='http://www.w3.org/2000/svg'>
-                  <SiCss3 />
-                </svg>
-              </div>
-              <h3 className='mb-2 text-xl font-bold text-white'>Tailwind CSS, HTML, & CSS</h3>
-              <p className='text-gray-400'>
-                I design and implement responsive layouts using semantic HTML and CSS. With Tailwind CSS, I rapidly
-                develop custom, utility-first styles that ensure consistency across devices—whether it{'’'}s a mobile
-                phone or a desktop.
-              </p>
-            </div>
-            <div>
-              <div className='flex justify-center items-center mb-4 w-max h-10 rounded-full bg-primary-100 lg:h-12 lg:w-max bg-primary-900'>
-                <svg
-                  className='w-8 h-8 text-white lg:w-12 lg:h-12'
-                  fill='currentColor'
-                  viewBox='0 0 20 20'
-                  xmlns='http://www.w3.org/2000/svg'>
-                  <HiMiniDevicePhoneMobile />
-                </svg>
-                <svg
-                  className='w-8 h-8 text-white lg:w-12 lg:h-12'
-                  fill='currentColor'
-                  viewBox='0 0 20 20'
-                  xmlns='http://www.w3.org/2000/svg'>
-                  <SlScreenTablet />
-                </svg>
-                <svg
-                  className='w-8 h-8 text-white lg:w-12 lg:h-12'
-                  fill='currentColor'
-                  viewBox='0 0 20 20'
-                  xmlns='http://www.w3.org/2000/svg'>
-                  <SlScreenDesktop />
-                </svg>
-              </div>
-              <h3 className='mb-2 text-xl font-bold text-white'>Responsive & Mobile-First Design</h3>
-              <p className='text-gray-400'>
-                I build applications with a mobile-first approach, ensuring that all projects look and work beautifully
-                on screens under 480px as well as on larger displays.
-              </p>
-            </div>
-            <div>
-              <div className='flex justify-center items-center mb-4 w-max h-10 rounded-full bg-primary-100 lg:h-12 lg:w-max bg-primary-900'>
-                <svg
-                  className='w-8 h-8 text-white lg:w-12 lg:h-12'
-                  fill='currentColor'
-                  viewBox='0 0 20 20'
-                  xmlns='http://www.w3.org/2000/svg'>
-                  <SiBackendless />
-                </svg>
-              </div>
-              <h3 className='mb-2 text-xl font-bold text-white'>Backendless & Serverless Architecture</h3>
-              <p className=' text-gray-400'>
-                I leverage Backendless as a backend-as-a-service platform to accelerate development. By using
-                Backendless, I can quickly implement data management, user authentication, and real-time capabilities
-                without the overhead of managing traditional servers.
-              </p>
-            </div>
-            <div>
-              <div className='flex justify-center items-center mb-4 w-max h-10 rounded-full bg-primary-100 lg:h-12 lg:w-max bg-primary-900'>
-                <svg
-                  className='w-8 h-8 text-white lg:w-12 lg:h-12'
-                  fill='currentColor'
-                  viewBox='0 0 20 20'
-                  xmlns='http://www.w3.org/2000/svg'>
-                  <TbApi />
-                </svg>
-              </div>
-              <h3 className='mb-2 text-xl font-bold text-white'>API Development & Integration</h3>
-              <p className=' text-gray-400'>
-                I design and implement RESTful API routes that power dynamic applications. My approach ensures seamless
-                communication between the client and server, and I follow best practices to maintain clean, efficient
-                code.
-              </p>
-            </div>
+            ))}
           </div>
         </div>
       </section>
-      <motion.h2
-        className='text-2xl sm:text-3xl font-bold text-center my-8 text-white'
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 1 }}></motion.h2>
-      <div className='max-w-full mx-auto max-md:space-x-4 md:grid md:grid-cols-2 md:gap-3'>
-        {skillsData.map((skill, index) => (
-          <div key={index}>
-            <div className='flex justify-between mb-1'>
-              <span className='text-white text-sm sm:text-base'>{skill.name}</span>
-              <span className='text-white text-sm sm:text-base'>{skill.level}%</span>
-            </div>
-            <div className='w-full bg-gray-600 rounded-full h-3'>
-              <motion.div
-                initial={{ width: 0 }}
-                whileInView={{ width: `${skill.level}%` }}
-                viewport={{ once: true }}
-                transition={{ duration: 1, delay: index * 0.2 }}
-                className={`${skill.color} h-3 rounded-full`}></motion.div>
-            </div>
-          </div>
-        ))}
-      </div>
     </section>
   );
 };
